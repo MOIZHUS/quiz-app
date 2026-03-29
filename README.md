@@ -71,6 +71,10 @@ npm run generate:types
 Sample quiz data is seeded from `payload.config.ts` during initialization.
 
 
+## Hosted On Vercel
+ https://quiz-db72vvd7u-moizh458-4482s-projects.vercel.app/
+
+
 ## Notes
 
 ### What I Prioritized and Why
@@ -105,4 +109,5 @@ Sample quiz data is seeded from `payload.config.ts` during initialization.
 - **Single quiz** — The app assumes one quiz document in the CMS. The `getQuiz()` service always fetches `limit: 1`. Multiple quizzes would require routing and a quiz selector.
 
 - **Denormalised answers** — Quiz results store `questionText` and `selectedOption` as plain strings (snapshot), not as foreign keys to the quiz. This means historical results remain accurate even if questions are edited in the CMS later.
+
 
